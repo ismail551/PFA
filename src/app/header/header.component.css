@@ -1,0 +1,62 @@
+header {
+    background-color: #4CAF50; /* Couleur de fond */
+    color: white;              /* Couleur du texte */
+    padding: 20px;             /* Espacement intérieur */
+    text-align: center;        /* Centre le texte et la navigation */
+    position: relative;        /* Pour le positionnement des éléments internes */
+    width: 100%;               /* Prend toute la largeur */
+    box-sizing: border-box;    /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+/* Style de la navigation */
+nav ul {
+    list-style: none;          /* Supprime les puces */
+    margin: 0;                 /* Supprime les marges */
+    padding: 0;                /* Supprime les espacements */
+    display: flex;             /* Affiche les éléments de la liste en ligne */
+    justify-content: center;   /* Centre les éléments de la navigation */
+    background-color: #333;    /* Fond de la navigation */
+    border-radius: 5px;        /* Bords arrondis */
+    padding: 10px;             /* Espacement interne */
+}
+
+nav ul li {
+    margin: 0 15px;            /* Espacement entre les éléments de menu */
+}
+
+nav ul li a {
+    color: white;              /* Couleur des liens */
+    text-decoration: none;     /* Supprime les soulignements des liens */
+    font-size: 16px;           /* Taille du texte des liens */
+    transition: color 0.3s;    /* Transition douce pour les changements de couleur */
+}
+
+nav ul li a:hover {
+    color: #4CAF50;            /* Couleur des liens au survol */
+}
+
+/* Style du titre */
+h1 {
+    margin: 20px 0;            /* Espacement vertical */
+    font-size: 24px;           /* Taille du texte */
+    font-weight: bold;         /* Gras pour le titre */
+}
+
+/* Style des paragraphes */
+p {
+    margin: 5px 0;             /* Espacement vertical */
+    font-size: 16px;           /* Taille du texte */
+    line-height: 1.5;          /* Hauteur de ligne pour plus de lisibilité */
+}
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Navigation verticale sur les petits écrans */
+        align-items: center;    /* Centre les éléments */
+    }
+
+    nav ul li {
+        margin: 10px 0;         /* Espacement vertical pour les éléments de menu */
+    }
+}
