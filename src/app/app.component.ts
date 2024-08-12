@@ -10,17 +10,19 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { TableviewComponent } from './tableview/tableview.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
-
+import { AboutComponent } from './pages/general/about/about.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderComponent,SearchComponent,FooterComponent, FormulaireComponent,BouttonComponent,SidebarComponent,TableviewComponent],
+  imports: [RouterOutlet,HeaderComponent,SearchComponent,FooterComponent, FormulaireComponent,BouttonComponent,SidebarComponent,  AboutComponent,TableviewComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   
  
 })
+
+
 export class AppComponent {
   title = 'PFA';
 }
