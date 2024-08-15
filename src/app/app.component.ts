@@ -11,11 +11,13 @@ import { TableviewComponent } from './tableview/tableview.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
 import { AboutComponent } from './pages/general/about/about.component';
+import { ContactComponent } from './pages/general/contact/contact.component';
+import { AjoutComponent } from './ajout/ajout.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderComponent,SearchComponent,FooterComponent, FormulaireComponent,BouttonComponent,SidebarComponent,  AboutComponent,TableviewComponent],
+  imports: [RouterOutlet,HeaderComponent,SearchComponent,FooterComponent, FormulaireComponent,BouttonComponent,SidebarComponent,ContactComponent,AboutComponent,TableviewComponent,AjoutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   
