@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 
 import { HeaderComponent } from './header/header.component';
@@ -13,11 +13,12 @@ import { SearchComponent } from './search/search.component';
 import { AboutComponent } from './pages/general/about/about.component';
 import { ContactComponent } from './pages/general/contact/contact.component';
 import { AjoutComponent } from './ajout/ajout.component';
+import { ADDuserComponent } from './adduser/adduser.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderComponent,SearchComponent,FooterComponent, FormulaireComponent,BouttonComponent,SidebarComponent,ContactComponent,AboutComponent,TableviewComponent,AjoutComponent],
+  imports: [RouterOutlet,RouterLink,RouterLinkActive,HeaderComponent,SearchComponent,FooterComponent, FormulaireComponent,BouttonComponent,SidebarComponent,ContactComponent,AboutComponent,TableviewComponent,AjoutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   
@@ -27,4 +28,6 @@ import { AjoutComponent } from './ajout/ajout.component';
 
 export class AppComponent {
   title = 'PFA';
+
+  classtoapply = "active";
 }
